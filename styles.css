@@ -1,0 +1,52 @@
+@font-face {
+    font-family: montserrat;
+    src: url(fonts/Montserrat/static/Montserrat-Regular.ttf) format(truetype);
+}
+
+#titulo {
+    background-color: #f5f5dc;
+    align-content: center;
+    border: 4px solid #adad9d;
+    border-radius: 10px;
+    font-family: montserrat;
+    margin: 10px;
+    text-align: center;
+}
+
+.contenedor{
+    display: flex;
+}
+
+.item {
+    width: 65%;
+    background-color: beige;
+    border: 4px solid #adad9d;
+    border-radius: 10px;
+    font-family: montserrat;
+    padding: 10px;
+    margin: 10px
+}
+
+#imagen {
+    width: 30%;
+    background-color: beige;
+    border: 4px solid #adad9d;
+    border-radius: 10px;
+    font-family: montserrat;
+    padding: 10px;
+    margin: 10px;
+}
+
+img {
+    width: 200px;
+}
+
+h2 {
+    font-family: montserrat;
+    text-align: center;
+    margin: 0px
+}
+
+#x1 {
+    margin: 0px;
+}
