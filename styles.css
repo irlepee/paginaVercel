@@ -3,6 +3,11 @@
     src: url(fonts/Montserrat/static/Montserrat-Regular.ttf) format(truetype);
 }
 
+@font-face {
+    font-family: montserrat-bold;
+    src: url(fonts/Montserrat/static/Montserrat-SemiBold.ttf);
+}
+
 #titulo {
     background-color: #f5f5dc;
     align-content: center;
@@ -28,7 +33,7 @@
 }
 
 #imagen {
-    width: 30%;
+    width: 220px;
     background-color: beige;
     border: 4px solid #adad9d;
     border-radius: 10px;
@@ -49,4 +54,9 @@ h2 {
 
 #x1 {
     margin: 0px;
+}
+
+span {
+    font-family: montserrat-bold;
+    width: 900
 }
