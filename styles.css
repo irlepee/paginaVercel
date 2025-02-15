@@ -6,7 +6,7 @@
 body {
     background-color: rgb(204, 204, 204);
     font-family: montserrat;
-    margin: 0; /*Quita absolutamente todos los márgenes por defecto*/
+    margin: 5px; /*Quita absolutamente todos los márgenes por defecto*/
 }
 
 header {
@@ -46,7 +46,7 @@ header {
     padding: 0px 10px 10px 10px;
 }
 
-@media (max-width: 550px){
+@media (max-width: 500px){
     .contenedor {
         flex-direction: column-reverse;
     }
