@@ -3,12 +3,25 @@
     src: url(fonts/Montserrat/static/Montserrat-Regular.ttf);
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.main-content {
+    flex: 1 0 auto;
+}
+  
+
 body {
+    display: flex;
+    flex-direction: column;
     font-family: montserrat;
     font-size: 12px;
-    margin: 0px;
     background-color: #222222;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 header {
@@ -73,4 +86,48 @@ img {
     justify-content: center;
     text-decoration: none;
     text-decoration: underline;
+}
+
+footer {
+    flex-shrink: 0;
+    color: white;
+    background-color: #13324a;
+    border: 3px solid #204e74;
+    border-radius: 30px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+
+@media (min-width: 550px){
+
+    body{
+        font-size: 14px;
+        padding: 20px;
+    }
+
+    header {
+        margin-bottom: 20px;
+    }
+
+    .contenedor{
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .info {
+
+    }
+
+    .item {
+        padding: 10px 30px;
+    }
+
+    img {
+        height: 250px;
+        width: 230px;
+    }
+
 }
