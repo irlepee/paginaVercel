@@ -78,7 +78,7 @@ header {
 
 footer {
     background-color: rgb(213, 216, 188);
-    border: 4px solid rgb(127, 127, 95);
+    border: 4px solid #7f7f5f;
     border-radius: 10px;
     text-align: center;
     padding: 5px;
