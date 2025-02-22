@@ -55,7 +55,7 @@ nav {
 }
 
 #yo {
-    border: 3px solid #451020;
+    border: 2px solid #451020;
     border-radius: 10px;
     width: 200px;
     height: 300px;
@@ -76,4 +76,16 @@ nav {
 
 .contenedor3 {
     text-align: end;
+}
+
+.contenedor4 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+}
+
+#nacionalidad {
+    width: 20px;
+    height: 20px;
 }

@@ -5,7 +5,7 @@
 
 body {
     font-family: montserrat;
-    font-size: 10px;
+    font-size: 12px;
     background-color: #222222;
 }
 
@@ -40,4 +40,55 @@ nav {
 #Return {
     width: 20px;
     height: 20px;
+}
+
+.indice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: #13324a;
+    border: 3px solid #204e74;
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #204e74;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+span {
+    color: #43bc84;
+}
+
+#kinder {
+    width: 230px;
+    height: 150px;
+}
+
+#escuela {
+    width: 230px;
+    height: 150px;
+}
+
+#secundaria {
+    width: 230px;
+    height: 150px;
+}
+
+#preparatoria {
+    width: 230px;
+    height: 150px;
+}
+
+#universidad {
+    width: 230px;
+    height: 150px;
 }
