@@ -62,6 +62,10 @@ span {
   color: #43bc84;
 }
 
+#volver {
+  flex: 0.5;
+}
+
 @media (min-width: 700px){
 
   body{
