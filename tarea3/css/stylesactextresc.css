@@ -19,7 +19,9 @@ nav {
     gap: 5px;
 }
 
-.item {
+a {
+    color: white;
+    text-decoration: none;
     display: flex;
     background-color: #296b9d;
     border-radius: 7px;
@@ -28,12 +30,7 @@ nav {
     transition: background-color 0.3s;
 }
 
-.item *{
-    color: white;
-    text-decoration: none;
-}
-
-.item:hover {
+a:hover {
     background-color: #949369;
 }
 

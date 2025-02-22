@@ -1,15 +1,15 @@
 @font-face {
     font-family: montserrat;
     src: url(../../fonts/Montserrat/static/Montserrat-Regular.ttf);
-}
-
-body {
+  }
+  
+  body {
     font-family: montserrat;
     font-size: 10px;
     background-color: #222222;
-}
-
-nav {
+  }
+  
+  nav {
     display: flex;
     background-color: #13324a;
     border: 3px solid #204e74;
@@ -17,48 +17,47 @@ nav {
     text-align: center;
     padding: 5px;
     gap: 5px;
-}
-
-.item {
+  }
+  
+  .item {
     display: flex;
     background-color: #296b9d;
     border-radius: 7px;
     align-items: center;
     padding: 3px;
     transition: background-color 0.3s;
-}
-
-.item *{
     color: white;
     text-decoration: none;
-}
-
-.item:hover {
+  }
+  
+  .item:hover {
     background-color: #949369;
-}
-
-#Return {
+  }
+  
+  #Return {
     width: 20px;
     height: 20px;
-}
-
-.indice {
+  }
+  
+  .indice {
     color: white;
     background-color: #13324a;
     border: 3px solid #204e74;
     border-radius: 7px;
     padding: 10px;
     margin-top: 10px;
-}
-
-.indice *{
+  }
+  
+  .indice * {
     color: #43bc84;
     text-decoration: none;
     border-radius: 5px;
     margin: 0px;
     transition: background-color 0.2s;
-}
-
-.indice a:hover{
+  }
+  
+  .indice a:hover {
     background-color: #949369;
-}
+  }
+  
+  
