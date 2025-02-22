@@ -1,61 +1,97 @@
 @font-face {
-    font-family: montserrat;
-    src: url(../../fonts/Montserrat/static/Montserrat-Regular.ttf);
+  font-family: montserrat;
+  src: url(../../fonts/Montserrat/static/Montserrat-Regular.ttf);
 }
 
 body {
-    font-family: montserrat;
-    font-size: 10px;
-    background-color: #222222;
+  font-family: montserrat;
+  font-size: 10px;
+  background-color: #222222;
 }
 
 nav {
-    display: flex;
-    background-color: #13324a;
-    border: 3px solid #204e74;
-    border-radius: 10px;
-    text-align: center;
-    padding: 5px;
-    gap: 5px;
+  display: flex;
+  background-color: #13324a;
+  border: 3px solid #204e74;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  gap: 5px;
 }
 
 a {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    background-color: #296b9d;
-    border-radius: 7px;
-    align-items: center;
-    padding: 3px;
-    transition: background-color 0.3s;
+  flex: 1;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  background-color: #296b9d;
+  border-radius: 7px;
+  align-items: center;
+  padding: 3px;
+  transition: background-color 0.3s;
 }
 
 a:hover {
-    background-color: #949369;
+  background-color: #949369;
 }
 
 #Return {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .indice {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    background-color: #13324a;
-    border: 3px solid #204e74;
-    border-radius: 7px;
-    padding: 10px;
-    margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #13324a;
+  border: 3px solid #204e74;
+  border-radius: 7px;
+  padding: 20px 0px;
+  margin-top: 10px;
 }
 
 img {
-    max-width: 200px;
-    max-height: 200px;
+  width: 250px;
+  height: 200px;
 }
 
 span {
-    color: #43bc84;
+  color: #43bc84;
+}
+
+@media (min-width: 700px){
+
+  body{
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  nav {
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  a {
+    justify-content: center;
+    flex: 1;
+    padding: 10px 30px;
+  }
+
+  .indice {
+    justify-self: center;
+    padding-bottom: 30px;
+    width: 600px;
+  }
+  
+  #volver {
+    flex: 0.5;
+  }
+  
+  img {
+    width: 400px;
+    height: 250px;
+  }
 }
