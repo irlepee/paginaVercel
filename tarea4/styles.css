@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family: "Poppins", serif;
+    margin: 0;
+}
+.container-radio {
+    font-family: "Poppins", serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 10px;
+    width: 400px;
+    padding: 40px;
+    margin: 10px;
+    color: white;
+    background-color: #032842;
+}
+
+.radio-button {
+    background-color: rgb(9, 50, 82);
+    border-radius: 10px;
+    padding: 10px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.radio-button:hover{
+    background-color: #0b629f;
+    transform: scale(1.05);
+}
+
+.radio-button input[type="radio"] {
+    display: none;
+}
+
+.radio-button input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+}
+
+.radio-button input[type="radio"] + label::before {
+    content: "";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid #bdbdbd;
+    transition: all 0.4s ease;
+}
+
+.radio-button input[type="radio"]:checked + label::before {
+    box-shadow: inset 0 0 0 .1em #fff, inset 0 0 0 2em #ff034f;
+}
+
+.container-checkbox {
+    font-family: "Poppins", serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #032842;
+    border-radius:10px;
+    padding: 40px;
+    margin: 10px;
+    width: 400px;
+    gap: 20px;
+}
+
+#check-bold {
+    font-weight: bold;
+    padding: 10px;
+}
+
+#check-italic {
+    font-style: italic;
+    padding: 10px;
+}
+
+#check-underline {
+    text-decoration: underline;
+    padding: 10px;
+
+}
+
+input[type="checkbox"] {
+    position: relative;
+}
+
+.check-box {
+    background-color: rgb(9, 50, 82);
+    border-radius: 10px;
+    padding: 3px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.check-box:hover{
+    background-color: #0b629f;
+    transform: scale(1.05);
+}
+
+h1 {
+    font-family: "Poppins", serif;
+    margin: 10px;
+}
+
+h2 {
+    font-family: "Poppins", serif;
+    margin: 20px;
+}
+
+#titulo-checkbox {
+    font-size: 22px;
+}
+
+.container-general-previsualition{
+    width: 90%;
+    height: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #000000;
+    margin: 20px;
+}
+
+.container-previsualizacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-general{
+    display: flex;
+}
+
+.container-pintura{
+    display: flex;
+    flex-direction: column;
+    width: 429px;
+    padding: 20px;
+    background-color: #032842;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.colorselection{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    background-color: rgb(9, 50, 82);
+    border-radius: 10px;
+    padding: 10px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.colorselection:hover{
+    background-color: #0b629f;
+    transform: scale(1.05);
+}
+
+
+.colorselection:hover{
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+/*Pa lo colore pa*/
+input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 30%;
+    border: 5px solid #000000;
+}
+
+input[type="color"]::-moz-color-swatch {
+    border-radius: 30%;
+    border: 5px solid #000000;
+}
+
+footer{
+    background: #2c2c2c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}
+
+#preview-text{
+    font-size: 20px;
+}
+
+@media (min-width: 250px) and (max-width: 1224px) {
+    .container-radio, 
+    .container-checkbox, 
+    .container-pintura {
+        width: 80%;
+        max-width: 500px;
+        padding: 25px;
+        margin: 15px auto;
+        text-align: center;
+    }
+
+    .container-general, 
+    .container-previsualizacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container-general-previsualition {
+        margin: 30px;
+        justify-content: center;
+        width: 80%;
+
+    }
+
+
+    h1, h2 {
+        text-align: center;
+        width: 100%;
+    }
+}
