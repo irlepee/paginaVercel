@@ -1,8 +1,7 @@
 const titleColorPicker = document.getElementById('Titulo');
 const textColorPicker = document.getElementById('Texto');
 const previewTitle = document.getElementById('preview-titulo');
-const previewText = document.getElementById("preview-text");
-const checkboxes = document.querySelectorAll('input[name="atributo"]');
+const previewText = document.getElementById('preview-text');
 
 // RADIO BUTTONS //
 const radioButtonFont = document.querySelectorAll('input[name="template"]');

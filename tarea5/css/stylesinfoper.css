@@ -1,0 +1,134 @@
+@font-face {
+    font-family: montserrat;
+    src: url(../../fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+body {
+    font-family: montserrat;
+    font-size: 10px;
+    background-color: #222222;
+}
+
+nav {
+    display: flex;
+    background-color: #13324a;
+    border: 3px solid #204e74;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    gap: 5px;
+}
+
+a {
+    flex: 1;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    background-color: #296b9d;
+    border-radius: 7px;
+    align-items: center;
+    padding: 3px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #949369;
+}
+
+#Return {
+    width: 20px;
+    height: 20px;
+}
+
+.indice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: #13324a;
+    border: 3px solid #204e74;
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#yo {
+    border: 2px solid #451020;
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+}
+
+.contenedor {
+    display: flex;
+    gap: 20px
+}
+
+.contenedor h3 {
+    color: #43bc84;
+}
+
+.contenedor2 {
+    text-align: start;
+}
+
+.contenedor3 {
+    text-align: end;
+}
+
+.contenedor4 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+}
+
+#nacionalidad {
+    width: 20px;
+    height: 20px;
+}
+
+#volver {
+    flex: 0.5;
+}
+
+@media (min-width: 700px){
+
+    body{
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    nav {
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+  
+    a {
+      justify-content: center;
+      flex: 1;
+      padding: 10px 30px;
+    }
+
+    .indice {
+        justify-self: center;
+        padding: 10px;
+        width: 480px;
+    }
+  
+    #volver {
+      flex: 0.5;
+    }
+  
+    .contenedor{
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    #yo {
+      height: 380px;
+      width: 270px;
+    }
+}
