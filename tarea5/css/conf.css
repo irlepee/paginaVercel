@@ -1,108 +1,143 @@
 @font-face {
-    font-family: montserrat;
-    src: url(../../fonts/Montserrat/static/Montserrat-Regular.ttf);
-  }
-    
-  body {
-    font-family: montserrat;
-    font-size: 10px;
-    background-color: #222222;
-  }
-    
-  nav {
-    display: flex;
-    background-color: #13324a;
-    border: 3px solid #204e74;
-    border-radius: 10px;
-    text-align: center;
-    padding: 5px;
-    gap: 5px;
-  }
-  
-  .item {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    background-color: #296b9d;
-    border-radius: 7px;
-    align-items: center;
-    padding: 3px;
-    transition: background-color 0.3s;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .item:hover {
-    background-color: #949369;
-  }
-  
-  #Return {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .indice {
-    color: white;
-    background-color: #13324a;
-    border: 3px solid #204e74;
-    border-radius: 7px;
+  font-family: montserrat;
+  src: url(../../fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+body {
+  font-family: montserrat;
+  font-size: 10px;
+  background-color: #222222;
+}
+
+nav {
+  display: flex;
+  background-color: #13324a;
+  border: 3px solid #204e74;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  gap: 5px;
+}
+
+a {
+  flex: 1;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  background-color: #296b9d;
+  border-radius: 7px;
+  align-items: center;
+  padding: 3px;
+  transition: background-color 0.3s;
+}
+
+a:hover {
+  background-color: #949369;
+}
+
+#Return {
+  width: 20px;
+  height: 20px;
+}
+
+#volver {
+  flex: 0.5;
+}
+
+.titulo {
+  color: white;
+  text-align: center;
+}
+
+.contendor {
+  display: flex;
+}
+
+.indice {
+  align-items: center;
+  gap: 10px;
+  color: white;
+  background-color: #13324a;
+  border: 3px solid #204e74;
+  border-radius: 7px;
+  padding: 0px 10px;
+  margin: 10px 0px;
+}
+
+.caracteristicas div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  margin-bottom: 5px;
+}
+
+#a_test {
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+#img_test {
+  margin: 10px 0px;
+}
+
+.previsualizacion {
+  text-align: center;
+}
+
+.previsualizacion2 {
+  display: grid;
+  place-items: center;
+  margin-bottom: 10px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid white;
+  padding: 10px;
+}
+
+img {
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 700px){
+
+  body{
+    font-size: 14px;
     padding: 10px;
-    margin-top: 10px;
   }
-    
-  .indice * {
-    color: #43bc84;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 0px;
-    transition: background-color 0.2s;
+  
+  nav {
+    justify-content: space-between;
+    margin-bottom: 20px;
   }
-    
-  .indice a:hover {
-    background-color: #949369;
+  
+  a {
+    justify-content: center;
+    flex: 1;
+    padding: 10px 30px;
+  }
+
+  .indice {
+    justify-self: center;
+    padding-bottom: 30px;
+    width: 600px;
   }
   
   #volver {
-    
     flex: 0.5;
   }
   
-  #iconconf {
-    width: 30px;
-    height: 30px;
+  img {
+    width: 400px;
+    height: 250px;
   }
-    
-  @media (min-width: 700px){
-  
-    body{
-      font-size: 14px;
-      padding: 10px;
-    }
-  
-    nav {
-      justify-content: space-between;
-      margin-bottom: 20px;
-    }
-  
-    .item {
-      justify-content: center;
-      flex: 1;
-      padding: 10px 30px;
-    }
-  
-    #volver {
-      flex: 0.5;
-    }
-  
-    .contenedor{
-      flex-direction: row;
-      justify-content: center;
-      gap: 20px;
-    }
-  
-    img {
-      height: 250px;
-      width: 230px;
-    }
-  
-  }
+}

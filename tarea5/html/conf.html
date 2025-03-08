@@ -4,15 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/conf.css">
 </head>
 <body>
     <nav>
-        <a id="volver" href="../../index.html" class="item"><img id="Return" src="../../icons/Return.png" alt="Volver"></a>
-        <a href="infoper.html" class="item">Información personal</a>
-        <a href="formaca.html" class="item">Formación académica</a>
-        <a href="sitlab.html" class="item">Situación laboral</a>
-        <a href="actextresc.html" class="item">Actividades extra escolares</a>
-        <a href="conf.html" class="item"><img id="iconconf" src="../../icons/conf.png" alt="Configuraciones"></a>
+        <a id="volver" href="../../index.html"><img id="Return" src="../../icons/Return.png" alt="Volver"></a>
+        <a href="infoper.html">Información personal</a>
+        <a href="formaca.html">Formación académica</a>
+        <a href="sitlab.html">Situación laboral</a>
+        <a href="actextresc.html">Actividades extra escolares</a>
     </nav>
+
+    <div class="titulo"><h1>Configuraciones</h1></div>
+
+    <div class="contenedor">
+
+        <div class="indice">
+            <div class="caracteristicas">
+                <div>
+                    <h2>Selecciona el color del fondo de todas las páginas: </h2>
+                </div>
+                <div>
+                    <input type="color" id="colorFondo">
+                </div>
+            </div>
+        </div>
+
+        <div class="indice">
+            <div class="caracteristicas">
+                <h2>Selecciona las características de los enalces: </h2>
+                <div>
+                    <h3>Redondear: </h3><input type="range" id="rangeRedondearEnlace" min="0" max="30" value="10">
+                </div>
+                <div>
+                    <h3>Color de fondo: </h3><input type="color" id="colorFondoEnlace">
+                </div>
+                <div>
+                    <h3>Color del enlace: </h3><input type="color" id="colorEnlace">
+                </div>
+            </div>
+            <div class="previsualizacion">
+                <h2>Enlace de previsualización: </h2>
+                <a id ="a_test" href="../html/index.html">Enlace a la página índice de la tarea 5</a>
+            </div>
+        </div>
+
+        <div class="indice">
+            <div class="caracteristicas">
+                <h2>Selecciona las características de las imágenes: </h2>
+                <div>
+                    <h3>Asignar tamaño: </h3>
+                    <select name="" id="selectTamañoImagen">
+                        <option value="ch">Chiquita</option>
+                        <option value="m">Mediana</option>
+                        <option value="g">Grande</option>
+                    </select>
+                </div>
+                <div>
+                    <h3>Definir color de contorno y su grosor: </h3>
+                    <input type="range" id="rangeGrosorImagen" min="0" max="10" value="3">
+                </div>
+                <div>
+                    <input type="color" id="colorContornoImagen">
+                </div>
+                <div>
+                    <h3>Definir redondeo de esquinas: </h3>
+                    <input type="range" id="rangeRedondearImagen" min="0" max="30" value="10">
+                </div>
+                <div>
+                    <h3>¿Sombra? </h3>
+                    <select name="" id="selectSombraImagen">
+                        <option value="">No</option>
+                        <option value="">Si</option>
+                    </select>
+                </div>
+            </div>
+            <div class="previsualizacion">
+                <h2>Previsualización de la imagen</h2>
+                <img id="img_test" src="../../images/salao.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="indice">
+            <div class="caracteristicas">
+                <h2>Selecciona las características de las tablas: </h2>
+                <div>
+                    <h3>Color de borde: </h3>
+                    <input type="color" id="colorBordeTabla">
+                </div>
+                <div>
+                    <h3>Color de fondo: </h3>
+                    <input type="color" id="colorFondoTabla">
+                </div>
+                <div>
+                    <h3>Color de celdas de títulos: </h3>
+                    <input type="color" id="colorCeldaTabla">    
+                </div>
+            </div>
+            <div class="previsualizacion2">
+                <table>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>País</th>
+                    </tr>
+                    <tr>
+                        <td>Juan</td>
+                        <td>25</td>
+                        <td>México</td>
+                    </tr>
+                    <tr>
+                        <td>María</td>
+                        <td>30</td>
+                        <td>España</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="indice">
+            <div class="caracteristicas">
+                <h2>Selecciona las características de los párrafos, títulos y subtítulos</h2>
+                <div>
+                    <h3>Color: </h3>
+                    <input type="color" id="colorFuente">
+                </div>
+                <div>
+                    <h3>Tamaño: </h3>
+                    <input type="range" id="rangeTamañoFuente" min="10" max="20" value="20">                    
+                </div>
+                <div>
+                    <h3>Color de fondo: </h3>
+                    <input type="color" id="colorFondoFuente">
+                </div>
+            </div>
+            <div class="previsualizacion3">
+                <p>En Autómatas Software tenemos estándares de trabajo claros, desde el compromiso con el cliente, la calidad del producto y el cuidado del desarrollador.</p>
+            </div>
+        </div>
+
+        <div class="indice">
+            <div><p>Tus cambios se guardan en tiempo real</p></div>
+            <div><p>Presiona aquí para restablecer las configuraciones</p></div>
+        </div>
+
+    </div>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
