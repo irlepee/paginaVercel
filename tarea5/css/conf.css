@@ -112,6 +112,11 @@ td, th {
   margin-bottom: 10px;
 }
 
+#iconconf {
+  width: 30px;
+  height: 30px;
+}
+
 @media (min-width: 700px){
 
   body{

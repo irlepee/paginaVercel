@@ -78,6 +78,11 @@ img {
     flex: 0.5;
 }
 
+#iconconf {
+    width: 30px;
+    height: 30px;
+}
+
 @media (min-width: 700px){
 
     body{
