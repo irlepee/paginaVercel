@@ -1,0 +1,1 @@
+const btnConfig = document.getElementByID
