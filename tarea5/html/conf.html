@@ -25,7 +25,7 @@
                     <h2>Selecciona el color del fondo de todas las páginas: </h2>
                 </div>
                 <div>
-                    <input type="color" id="colorFondo">
+                    <input type="color" id="colorFondo" value="#222222">
                 </div>
             </div>
         </div>
@@ -37,10 +37,10 @@
                     <h3>Redondear: </h3><input type="range" id="rangeRedondearEnlace" min="0" max="30" value="10">
                 </div>
                 <div>
-                    <h3>Color de fondo: </h3><input type="color" id="colorFondoEnlace">
+                    <h3>Color de fondo: </h3><input type="color" id="colorFondoEnlace" value="#296b9d">
                 </div>
                 <div>
-                    <h3>Color del enlace: </h3><input type="color" id="colorEnlace">
+                    <h3>Color del enlace: </h3><input type="color" id="colorEnlace" value="#ffffff">
                 </div>
             </div>
             <div class="previsualizacion">
@@ -55,9 +55,9 @@
                 <div>
                     <h3>Asignar tamaño: </h3>
                     <select name="" id="selectTamañoImagen">
-                        <option value="ch">Chiquita</option>
-                        <option value="m">Mediana</option>
-                        <option value="g">Grande</option>
+                        <option value="25%">Chiquita</option>
+                        <option value="50%" selected>Mediana</option>
+                        <option value="75%">Grande</option>
                     </select>
                 </div>
                 <div>
@@ -65,7 +65,7 @@
                     <input type="range" id="rangeGrosorImagen" min="0" max="10" value="3">
                 </div>
                 <div>
-                    <input type="color" id="colorContornoImagen">
+                    <input type="color" id="colorContornoImagen" value="#ffffff">
                 </div>
                 <div>
                     <h3>Definir redondeo de esquinas: </h3>
@@ -74,8 +74,8 @@
                 <div>
                     <h3>¿Sombra? </h3>
                     <select name="" id="selectSombraImagen">
-                        <option value="">No</option>
-                        <option value="">Si</option>
+                        <option value="No">No</option>
+                        <option value="Si">Si</option>
                     </select>
                 </div>
             </div>
@@ -90,15 +90,15 @@
                 <h2>Selecciona las características de las tablas: </h2>
                 <div>
                     <h3>Color de borde: </h3>
-                    <input type="color" id="colorBordeTabla">
+                    <input type="color" id="colorBordeTabla" value="#ffffff">
                 </div>
                 <div>
                     <h3>Color de fondo: </h3>
-                    <input type="color" id="colorFondoTabla">
+                    <input type="color" id="colorFondoTabla" value="#13324a">
                 </div>
                 <div>
                     <h3>Color de celdas de títulos: </h3>
-                    <input type="color" id="colorCeldaTabla">    
+                    <input type="color" id="colorCeldaTabla" value="#13324a">    
                 </div>
             </div>
             <div class="previsualizacion2">
@@ -127,7 +127,7 @@
                 <h2>Selecciona las características de los párrafos, títulos y subtítulos</h2>
                 <div>
                     <h3>Color: </h3>
-                    <input type="color" id="colorFuente">
+                    <input type="color" id="colorFuente" value="#ffffff">
                 </div>
                 <div>
                     <h3>Tamaño: </h3>
@@ -144,8 +144,8 @@
         </div>
 
         <div class="indice">
-            <div><p>Tus cambios se guardan en tiempo real</p></div>
-            <div><p>Presiona aquí para restablecer las configuraciones</p></div>
+            <div><p>Tus cambios se guardan automáticamente</p></div>
+            <div class="restablecer"><p>Restablecer configuraciones</p></div>
         </div>
 
     </div>

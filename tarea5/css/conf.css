@@ -104,8 +104,12 @@ td, th {
   padding: 10px;
 }
 
-img {
-  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.8);
+.restablecer {
+  text-align: center;
+  background-color: red;
+  border-radius: 10px;
+  padding: 1px 5px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 700px){
