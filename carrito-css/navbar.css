@@ -1,0 +1,242 @@
+.navbar {
+    position: fixed;
+    font-family: 'Gliker', sans-serif;
+    display: block;
+    justify-content: space-between;
+    background-color: var(--color-navbar);
+    height: auto;
+    margin-bottom: 15px;
+    width: 100%;
+    z-index: 990;
+    overflow: hidden;
+    top: 0;
+}
+
+.navbar__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+
+.navbar__logo {
+    display: flex;
+    height: 60px;
+    margin-left: 18px;
+}
+
+.hamburguer-menu-icon {
+    height: 40px;
+    cursor: pointer;
+}
+
+.hamburguer-menu-icon:hover {
+    background-color: var(--darker-gray);
+    border-radius: 5px;
+}
+
+.user-icon {
+    height: 40px;
+    cursor: pointer;
+}
+
+.user-icon:hover {
+    background-color: var(--darker-gray);
+    border-radius: 5px;
+}
+
+.navbar__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.increase-height {
+    animation: heightIncrease 0.3s forwards;
+}
+
+.decrease-height {
+    animation: heightDecrease 0.3s forwards;
+}
+
+.navbar__link {
+    text-align: center;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    display: none;
+}
+
+.navbar__button {
+    font-family: 'Gliker', sans-serif;
+    background-color: #ff5100;
+    color: var(--white);
+    font-size: 22px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+    height: 0;
+    width: 0;
+    font-size: 0;
+    padding: 0;
+}
+
+.navbar__button--active {
+    font-size: 22px;
+    padding: 10px 15px;
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+.navbar__link--active {
+    display: flex;
+}
+
+.navbar__link:hover {
+    background-color: var(--darker-gray);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.navbar__button {
+    display: none;
+}
+
+.navbar__button:hover {
+    background-color: var(--primary-hover);
+}
+
+.cart-icon ,
+.profile-icon {
+    height: 0;
+    width: 0;
+}
+
+.cart-icon--active ,
+.profile-icon--active {
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+
+.navbar__user-icons {
+    display: flex;
+    gap: 60px;
+}
+
+@media (min-width: 768px) {
+    .navbar__header {
+        justify-content: space-between;
+        margin: 10px 20px;
+    }
+
+    .navbar__link-logo {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar {
+        display: flex;
+        height: auto;
+    }
+
+    .navbar__header {
+        justify-content: space-between;
+        padding: 0;
+        margin: 0 0 0 20px;
+    }
+
+    .navbar__logo {
+        width: auto;
+        height: 80px;
+        margin: 10px;
+    }
+
+    .navbar__links {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+
+    .navbar__link {
+        display: flex;
+        font-size: 2rem;
+    }
+
+    .navbar__link:hover {
+        font-size: 2rem;
+    }
+
+    .navbar__link--disabled {
+        display: none;
+    }
+
+    .navbar__button {
+        display: flex;
+    }
+
+    .hamburguer-menu-icon {
+        display: none;
+    }
+
+    .user-icon {
+        display: none;
+    }
+
+    .navbar__button {
+        font-family: 'Gliker', sans-serif;
+        background-color: #ff5100;
+        color: var(--white);
+        font-size: 22px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        display: flex;
+        height: auto;
+        width: auto;
+    }
+
+    .cart-icon ,
+    .profile-icon {
+        height: 32px;
+        width: 32px;
+    }
+
+    .navbar__user-icons {
+        gap: 30px;
+        display: flex;
+        cursor: pointer;
+    }
+}
+
+@keyframes heightIncrease {
+    from {
+        height: 100px;
+    }
+
+    to {
+        height: 369px;
+    }
+}
+
+@keyframes heightDecrease {
+    from {
+        height: 369px;
+    }
+
+    to {
+        height: 100px;
+    }
+}
